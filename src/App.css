@@ -1,38 +1,61 @@
-.App {
-  text-align: center;
+.img{
+  position: absolute;
+  width: 10%;
+  bottom: 85%;
+  left: 5%;
+  background-color: black;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Card{
+  position: relative;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+    flex-direction: column;
+    border: 2px solid rgb(108, 71, 3);
+    align-items: center;
+    text-align: center;
+    padding: 5%;
+    margin: 5%;
+    width: 100%;
+  /* transition:  height 4s; */
+}
+.Card:hover{
+  border: 2px solid orange;
+  /* height: 50%; */
+  /* background-color: rgb(104, 69, 4); */
+  /* width: 300px; */
+}
+.coinname{
+  font-size: 35px;
+  color: aliceblue;
+  font-weight: 700;
+
+}
+.coin{
+  display: flex;
+  width: 30%;
+  height: 30%;
+ /* transition:  width 1s; */
+ transition: width 2s, height 4s;
+}
+.coin:hover{
+width: 35%;
+height: 40%;
+}
+.hhh{
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: center; */
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.app{
+  background-color: black;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.symbol{
+  color: aliceblue;
+  font-size: 18px;
+}
+.price{
+  color: aliceblue;
+}
+.uuid{
+  color: aliceblue;
 }
